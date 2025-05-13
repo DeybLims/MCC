@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white_a700: #ffffff;
+  --white_a700_7f: rgba(255, 255, 255, 0.5);
+  --white_a700_4c: rgba(255, 255, 255, 0.3);
+  
+  --gray_500: #929292;
+  --gray_900: #1d1d1d;
+  --gray_900_01: #191919;
+  --gray_900_02: #131313;
+  
+  --blue_gray_900: #313131;
+  --black_900: #000000;
+  --black_900_01: #0a0a0a;
+  --amber_400: #ffbf00;
+} 

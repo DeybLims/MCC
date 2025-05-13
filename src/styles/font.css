@@ -1,0 +1,10 @@
+/* 
+  The fonts are now loaded from Google Fonts via the link in index.html
+  No @font-face declarations are needed, but we keep this file for reference
+  and in case you want to add custom font styles or weights later.
+  
+  Font families to use in your CSS:
+  font-family: 'Inter', sans-serif;
+  font-family: 'Kenia', cursive;
+  font-family: 'Poppins', sans-serif;
+*/

@@ -1,63 +1,75 @@
 # MSL Philippines Website
 
-This project is a React implementation of the MSL Philippines website design.
+This project is a React implementation of the MSL Philippines website, featuring the MSL Collegiate Cup Season 2 tournament.
 
 ## Technologies Used
 
-- React 18
-- TypeScript
+- React 17
+- JavaScript
 - Tailwind CSS
+- React Router
+
+## Features
+
+- **Interactive Event Calendar**: Navigate between months to view tournament schedules
+- **Responsive Layout**: Fully responsive design for desktop, tablet, and mobile views
+- **MSL Collegiate Cup S2**: Featured tournament information and schedules
+- **University Rivals Tournament**: Details about the multi-region university competition
 
 ## Setup Instructions
 
 1. Install dependencies:
-```
+```bash
 npm install
 ```
 
 2. Start development server:
-```
-npm start
+```bash
+npm run dev
 ```
 
 3. Build for production:
-```
+```bash
 npm run build
 ```
 
 ## Project Structure
 
-- `src/components/HomePage.tsx` - Main homepage component
-- `src/App.tsx` - Main application component
-- `src/index.tsx` - React entry point
-- `public/images/` - Contains all images used in the website
+- `/src/Pages` - Main page components
+  - `/MCCMAIN` - MSL Collegiate Cup main page
+  - `/MCCCALENDARFINAL` - Tournament calendar page
+- `/src/components` - Reusable UI components
+  - `/Header` - Navigation header
+  - `/Footer` - Site footer
+  - `/Button`, `/Text`, `/Img` - Basic UI components
+- `/public/images/` - Contains all images used in the website
+
+## Key Components
+
+- **Header**: Navigation with dropdown menus for both desktop and mobile
+- **MCCHeaderSection**: Main section for the MSL Collegiate Cup with tournament categories
+- **EventCalendarSection**: Interactive tournament calendar with navigation
+- **Footer**: Site footer with links and information
 
 ## Design Implementation
 
-This project implements the design from the provided Figma mockups, with the following features:
+This project implements a gaming-focused design with:
 
-- Responsive navigation header
-- Hero section with MSL Collegiate Cup branding
-- Menu cards for different sections of the site
-- Responsive footer with links and information
-- Dark theme with proper color schemes as defined in the design
+- Dark theme with gold accents (#F3C718)
+- Responsive navigation with dropdown menus
+- Custom date boxes for tournament events
+- Interactive calendar with month navigation
+- Status indicators for upcoming events
 
-## Image Sources
+## Image Assets
 
-The following image placeholders are used in the project:
+The project uses the following key images:
 
-- /images/msl-logo.png
-- /images/profile-avatar.png
-- /images/mcc-logo.png
-- /images/tournament-structure.png
-- /images/org-enlist.png
-- /images/rulebook.png
-- /images/calendar.png
-- /images/registration.png
-- /images/msl-philippines-logo.png
-- /images/mobile-legends-logo.png
-- /images/msl-philippines-footer-logo.png
-- /images/mobile-legends-footer-logo.png
-- /images/moonton-logo.png
-
-Replace these with actual images from the design. 
+- `/images/MSL LOGO.png` - MSL Philippines logo
+- `/images/MCC_HLOGO.png` - Collegiate Cup header logo
+- `/images/MCC2_BG.png` - Main background for the Collegiate Cup page
+- `/images/MCC2_CALENDAR_BG.png` - Background for the calendar page
+- `/images/CalendarFrame.png` - Decorative frame for the calendar
+- `/images/LeftButton.png` & `/images/RightButton.png` - Calendar navigation buttons
+- `/images/Overview.png`, `/images/OrgEnlist.png`, etc. - Category thumbnails
+- `/images/MLBB NEW LOGO.png` - Mobile Legends: Bang Bang logo

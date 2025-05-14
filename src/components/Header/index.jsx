@@ -71,7 +71,7 @@ export default function Header({ ...props }) {
       <div className="flex w-full max-w-[1844px] mx-auto justify-between items-center">
         {/* Left logo */}
         <div>
-          <Img src="images/MSL LOGO.png" alt="MSL Logo" className="h-[42px] w-[150px] object-contain" />
+          <Img src="./images/MSL LOGO.png" alt="MSL Logo" className="h-[42px] w-[150px] object-contain" />
         </div>
 
         {/* Desktop Navigation - use JavaScript-based approach */}
@@ -110,7 +110,7 @@ export default function Header({ ...props }) {
               {mobileMenuOpen && (
                 <div 
                   ref={mobileMenuRef}
-                  className="absolute right-0 top-full mt-2 w-[200px] bg-gray-900 border border-gray-800 rounded shadow-lg z-50"
+                  className="absolute right-0 top-full mt-2 w-[200px] bg-[#141414] border-gray-800 rounded shadow-lg z-50"
                 >
                   <div className="py-1">
                     {navItems.map((item, index) => (
@@ -118,6 +118,7 @@ export default function Header({ ...props }) {
                         key={index}
                         href={item.link}
                         className="block px-4 py-3 text-white hover:bg-gray-800 border-b border-gray-800 last:border-b-0"
+                        style={{ color: 'white', fontWeight: 'normal' }}
                       >
                         {item.label}
                       </a>
@@ -146,7 +147,7 @@ export default function Header({ ...props }) {
             {profileMenuOpen && (
               <div 
                 ref={profileMenuRef}
-                className="absolute right-0 top-full mt-2 w-[180px] bg-gray-900 border border-gray-800 rounded shadow-lg z-50"
+                className="absolute right-0 top-full mt-2 w-[180px] bg-[#141414] border border-gray-800 rounded shadow-lg z-50"
               >
                 <div className="py-1">
                   {profileOptions.map((option, index) => (
@@ -154,6 +155,7 @@ export default function Header({ ...props }) {
                       key={index}
                       href={option.link}
                       className="block px-4 py-2 text-white hover:bg-gray-800 border-b border-gray-800 last:border-b-0"
+                      style={{ color: 'white', fontWeight: 'normal' }}
                     >
                       {option.label}
                     </a>

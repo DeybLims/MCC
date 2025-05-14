@@ -1,29 +1,24 @@
 import { Helmet } from "react-helmet";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import EventCalendarSection from "./EventCalendarSection";
 import React from "react";
 
 export default function MCCCALENDARFINALPage() {
   return (
     <>
       <Helmet>
-        <title>MCC Calendar - Student Leaders Hub</title>
+        <title>Event Calendar - Moonton Student Leaders</title>
         <meta
           name="description"
-          content="View the Moonton Student Leaders Philippines event calendar. Stay updated with upcoming events and activities."
+          content="Stay up-to-date with the Moonton Student Leaders' event calendar. Discover upcoming university rivalries and engage with student leaders across the Philippines."
         />
       </Helmet>
       <div className="w-full bg-black-900">
         <Header />
         
-        <div className="flex flex-col items-center justify-center min-h-[80vh] bg-[url('/public/images/MCC2_CALENDAR_BG.png')] bg-cover bg-no-repeat py-[30px]">
-          <h1 className="text-amber-400 text-[54px] font-bold mb-4">MCC Calendar</h1>
-          <p className="text-white-a700 text-[20px] text-center max-w-2xl">
-            View the official calendar for Moonton Student Leaders Philippines events and activities.
-          </p>
-          {/* Calendar content will go here */}
-        </div>
-        
+        {/* event calendar section */}
+        <EventCalendarSection />
         <Footer />
       </div>
     </>

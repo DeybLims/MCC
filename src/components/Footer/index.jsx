@@ -164,8 +164,8 @@ export default function Footer({ ...props }) {
           <div className="w-full h-px bg-gray-900 my-8" />
           
           <div className="flex justify-center items-center gap-12 mb-8">
-            <Img src="images/MSL LOGO.png" alt="MSL Logo" className="h-[48px] object-contain" />
-            <Img src="images/MLBB NEW LOGO.png" alt="MLBB Logo" className="h-[48px] object-contain" />
+            <Img src="images/MLBB NEW LOGO.png" alt="MSL Logo" className="h-[48px] object-contain" />
+            <Img src="images/MoontonLogo.png" alt="MLBB Logo" className="h-[48px] object-contain" />
           </div>
           
           <div className="flex w-full justify-between items-center">
